@@ -16,6 +16,7 @@ public class Registration extends BaseTest {
         Thread.sleep(3000);
         driver.findElement(By.cssSelector(loc.getProperty("CreateNewAccount"))).click();
         Thread.sleep(3000);
+
         driver.findElement(By.cssSelector(loc.getProperty("FirstName"))).sendKeys("Piyush");
     }
 }
