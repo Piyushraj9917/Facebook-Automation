@@ -48,13 +48,14 @@ public class BaseTest {
             driver.manage().window().maximize();
         }
         wait = new WebDriverWait(driver,Duration.ofSeconds(20));
+        driver.manage().timeouts()
 
         ReadCSV rc = new ReadCSV();
         rc.ReadData(0);
 
 
     }
-    //@AfterSuite
+    @AfterSuite
     public void TearDown()
     {
         driver.quit();
